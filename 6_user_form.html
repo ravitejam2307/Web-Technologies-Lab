@@ -1,0 +1,26 @@
+<html>
+  <head>
+     <title> user_form</title>
+        <script type="text/javascript">
+	   var fname, lname, dob1;
+	   
+	  function print()
+	  {
+		 fname = document.f1.firstName.value;
+		 lname = document.f1.lastName.value;
+		 dob1  = document.f1.dob.value;
+		 document.writeln("First Name="+fname);
+		 document.writeln("Last Name="+lname);
+		 document.writeln("DOB = "+dob1);
+	  }
+	   </script>
+          </head>
+       <body>
+            <form name='f1'>
+          Enter First Name <input type='text' name='firstName'>
+          Enter Last Name <input type='text' name='lastName'>
+          Enter DOB <input type='date' name='dob'>
+      <input type='button' value='submit' onclick = print()>
+      </form>
+      </body>
+      </html>

@@ -1,0 +1,53 @@
+<html>
+   <head>
+     <title>Bank</title>
+       <script>
+         function operations()
+          {
+          j=document.bank.t5.length;
+           alert(j);
+         for(var i=0;i<j;i++)
+          {
+           if(document.bank.t5[i].selected)
+           {
+           if(document.bank.t5[i].value==1)
+           {
+            document.bank.t4.value=Number(document.bank.t6.value)+Number            (document.bank.t4.value);
+           }
+          else
+           {
+           bal=Number(document.bank.t4.value)-Number(document.bank.t6.value);
+           if(bal<1000)
+           {
+            alert("Withdraw is not possible,There is no sufficient amount");
+           }
+          else
+           {
+           document.bank.t4.value=bal;
+           }
+         }
+       }
+      }
+     }
+  </script>
+ </head>
+<body text="red">
+ <marquee behavior="scroll"><h1 align="center">Bank Information</h1></marquee>
+  <br><br>
+ <form name="bank">
+ <h1>
+ <pre>
+ Name <input type="text" name="t1"><br><br>
+ Acc no <input type="text" name="t2"><br><br>
+ Address <textArea name="t3" rows="5" cols="14"></textArea><br><br>
+ Opening Balance <input type="text" name="t4" value="1000" disabled><br><br>
+ Operation <select name="t5">
+ <option value="1">Deposit</option>
+ <option value="2">Withdraw</option>
+ </select> Amount:<input type="text" name="t6" >
+ <br><br>
+ <input type="button" value="submit" onClick="operations()">
+ </h1>
+ </form>
+ </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration form</title>
+     <script type = "text/javascript">
+      function validate()
+      {
+      if((document.myform.name.value==" ")||(document.myform.name.value.length<5))
+        {
+       alert("please enter proper name(name must be more than 5 characters)");
+       document.myform.name.focus();
+       return false;
+        }
+      if((document.myform.phone.value==" ")||(document.myform.phone.value.length!=10))
+      {
+       alert("please enter 10 digit phone number");
+       document.myform.phone.focus();
+       return false;
+      }
+	  address = document.myform.address.value;
+       if(address=="")
+	    {
+       alert("please enter address");
+       document.myform.address.focus();
+       return false;
+        }
+    return true;
+   } 
+    </script>
+ </head>
+ <body>
+   <h1><center>Registration form</center></h1>
+   <form name="myform" onsubmit="return(validate());">
+   Name:
+   <input type="text" name="name" placeholder="name">
+  <br><br>
+   Phone number:
+   <input type="text" name="phone" placeholder="number">
+   <br><br>
+   Address:
+   <textarea name="address" cols="30" rows="1" placeholder="address"></textarea>
+   <br><br>
+ <input type="button" value="submit" onClick="validate()">
+  </form>
+ </body>
+</html>

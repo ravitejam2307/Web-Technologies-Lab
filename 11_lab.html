@@ -1,0 +1,40 @@
+<html>
+<head>
+<script language="javascript">
+var count=1;
+function authenticate()
+{
+alert(document.form.user.value);
+alert(document.form.pass.value);
+if (count<=3)
+{
+if(document.form.user.value=="rrr" && document.form.pass.value=="rrr")
+{
+document.writeln("welcome! RRR 2021 !!");
+}
+else
+{
+alert("Incorrect username and password");
+form.user.value="" ;
+form.user.focus();
+form.pass.value="";
+count++;
+}
+}
+else
+{
+alert("invlid login reload the page");
+form.user.value="";
+form.pass.value="";
+}
+}
+</script>
+</head>
+<body>
+<form name="form">
+User Name: <input type="text" name="user" ><br><br>
+Password: <input type="password" name="pass" value=""><br><br>
+<input type="button" value="send" onClick="authenticate()">
+</form>
+</body>
+</html>

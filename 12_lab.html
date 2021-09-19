@@ -1,0 +1,46 @@
+<html>
+<head>
+<script language="javascript">
+var count=1;
+function authenticate()
+{
+alert(document.form.user.value);
+alert(document.form.pass.value);
+if (count<=3)
+{
+if(document.form.user.value=="rrr" && document.form.pass.value=="rrr")
+{
+document.writeln("welcome RRR 2021!");
+}
+else
+{
+alert("Incorrect username and password");
+form.pass.value="" ;
+form.pass.focus();
+if(form.pass.value=="")
+t=setTimeout("f()",15000);
+count++;
+}
+}
+else
+{
+alert("invlid login reload the page");
+form.user.value="";
+form.pass.value="";
+}
+}
+function f()
+{
+form.pass.value="raviteja";
+}
+</script>
+</head>
+<body>
+<form name="form">
+User Name: <input type="text" name="user" ><br><br>
+Password: <input type="password" name="pass" value=""><br><br>
+<input type="button" value="send" onClick="authenticate()">
+<input type="button" value="generate password" onClick="f()">
+</form>
+</body>
+</html>

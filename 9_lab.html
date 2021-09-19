@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cyber book stores</title>
+</head>
+<body>
+<h1><center>Cyber Book Stores</center></h1>
+<table cellpadding="5" cellspacing="20">
+<tr>
+<td>Author:NP gopal<br>title:Web Technology<br>
+<a href="11link.html"><img src="web.jpg" width="130" height="150"></a><br>cost:300/-</td>
+<td>Author:Harsh Bhasin<br>title:PYTHON<br>
+<a href="22link.html"><img src="python.jpg" width="130" height="150"></a><br>cost:250/-</td>
+<td>Author:Surbhi Kakar<br>title:JAVA<br>
+<a href="33link.html"><img src="java.jpg" width="150" height="150"></a><br>cost:350/-</td>
+<td>Author:Roger S.<br>title:Software Engineering<br>
+<a href="44link.html"><img src="se.jpeg" width="130" height="150"></a><br>cost:400/-</td>
+<td>
+<br>
+<form name='f1'>
+select book<select name="books">
+<option value="select book">SELECT</option>
+<option value="web">WEB TECHNOLOGY</option>
+<option value="python">PYTHON</option>
+<option value="java">JAVA</option>
+<option value="SE">Software Engineering</option>
+<br> <br> <br> <br>
+<input type='button' value='submit' onclick = "display()">
+</td>
+</tr>
+</form>
+</table>
+<script language="javascript">
+var i,j;
+function display()
+{
+j=document.f1.books.length;
+for(i=0;i<j;i++)
+{
+if(document.f1.books[i].selected)
+{
+if(document.f1.books[i].value="Web Technology")
+window.open("11link.html");
+else if(document.f1.books[i].value="PYTHON")
+window.open("22link.html");
+else if(document.f1.books[i].value="JAVA")
+window.open("33link.html");
+else if(document.f1.books[i].value="Software Engineering")
+window.open("44link.html");
+else
+window.write("Not valid");
+}
+}
+}
+</script>
+</body>
+</html>

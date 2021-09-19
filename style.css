@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-color: lightblue;
+  font-size:25px;
+}
+h1 {
+  color: blue;
+   padding: 20px;
+}
+p {
+  color: red;
+}
