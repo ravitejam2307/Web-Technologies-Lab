@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+    <!-- Obtain stylesheet. Note that the xml file & css file should be in the same directory/location -->
+    <?xml-stylesheet type="text/css" href="ANU.css" ?>
+        <student>
+            Student 1 details:
+                <info>
+                    ID:<id>Y20CS001</id>
+                    Name:<name>sai</name>
+                    College:<college>RVR</college>
+                    Branch:<branch>CSE</branch>
+                    Year Of Joining:<yoj>2020</yoj>
+                    Email-ID:<email>sai@gmail.com</email>
+                </info>
+            Student 2 details:
+                <info>
+                    ID:<id>Y20CA034</id>
+                    Name:<name>ravi</name>
+                    College:<college>RVR</college>
+                    Branch:<branch>MCA</branch>
+                    Year Of Joining:<yoj>2020</yoj>
+                    Email-ID:<email>ravi@gmail.com</email>
+                </info>
+            Student 3 details:
+                <info>
+                    ID:<id>Y20CS001</id>
+                    Name:<name>ram</name>
+                    College:<college>RVR</college>
+                    Branch:<branch>MBA</branch>
+                    Year Of Joining:<yoj>2020</yoj>
+                    Email-ID:<email>ram@gmail.com</email>
+                </info>
+        </student>
