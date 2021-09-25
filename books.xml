@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl"  href="books.xsl" ?>
+<data>
+<inner>
+<title>Java server pages</title>
+<author>HANS BERGSTEN</author>
+<edition>2nd</edition>
+<price>455</price>
+</inner>
+<inner>
+<title>Computer Networks</title>
+<author>ANDREW S TANENBUM</author>
+<edition>4 th</edition>
+<price>500</price>
+</inner>
+<inner>
+<title>Java Programing with CORBA</title>
+<author>G.BROSE</author>
+<edition>3 rd </edition>
+<price>400</price>
+</inner>
+<inner>
+<title>Data Mining-Concepts and designs</title>
+<author>HAN AND KAMBER</author>
+<edition>4 th</edition>
+<price>600</price>
+</inner>
+</data>
