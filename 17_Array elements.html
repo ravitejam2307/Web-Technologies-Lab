@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Array elements</title>
+<script>
+           var a=[3,4,5,1,2,3];
+           var i,c[];
+                for(i=0;i<a.length;i++)
+                     {
+                       c[i] = a[i];
+              
+          function updating() 
+          {
+              var i,alen;
+              alen=c.length;
+              for(i=0;i<alen;i++)
+               {
+                 if(i==alen)
+                  {
+                    c[i]=6;
+                   }
+                }
+            }
+    document.getElementById("demo").innerHTML="array updating is:"+c;
+   }
+
+ function sorting()
+ {
+   var i,alen,temp;
+   alen=a.length;
+   for(j=0;j<alen;j++)
+    {
+      if(a[j]>a[i])
+       {
+         temp = a[j];
+          a[j] = a[j+1];
+          a[j+1] = temp;
+       }
+    }
+  }
+</script>
+  </head>
+    <body>
+           <button onclick="updating()">Update</button>
+             <p id="demo"></p>
+             <p id="demo1"></p>
+             <p id="demo2"></p>
+             <p id="demo3"></p>
+</body>
+</html> 
