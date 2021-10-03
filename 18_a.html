@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title> objects </title>
+<script type ="text/javascript"
+ function str()
+{
+var s=prompt("enter string");
+var a=s.toUpperCase();
+document.getElementById("demo").innerHTML="Uppercase:"+a+"<br>Lowercase:"+s.toLowerCase()+"<br>String length:"+s.length+"<br>character at 3rd position:"+s.charAt(3);
+}
+function math()
+{
+var a=prompt("enter a value");
+var b=prompt("enter b value");
+document.getElementById("demo").innerHTML="absolute value:"+math.abs(a)+"<br>square root of"+b+":"+math.sqrt(b)+"<br> minimum value:"+math.min(a,b)+"<br> maximum value :"+math.max(a,b)+<br>power:"+math.pow(a,b);
+}
+</script>
+</head>
+<body>
+<h1>String & Math Objects</h1>
+ <form>
+<button onclick="str()">String</button>
+<button onclick="math()">Math</button>
+ </form>
+<p id ="demo"></p>
+</body>
+</html>
